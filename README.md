@@ -4,6 +4,14 @@
 
 An MIT-licensed MarkText derivative for reading Markdown aloud with Qwen, Xiaomi MiMo and OpenAI-compatible TTS services. Includes continuous narration, sentence highlighting, buffered playback and interruptible scroll following.
 
+## 项目介绍
+
+MarkText TTS 是一款面向长篇小说和 Markdown 文档的桌面听读器。在保留 MarkText 编辑与阅读体验的基础上，它接入千问、MiMo 和 OpenAI 兼容语音合成服务，让本地 Markdown 文件可以连续朗读，同时标出当前句子并滚动跟随。
+
+听读时可以自由浏览其他段落：滚轮或拖动滚动条会暂时暂停视图跟随，声音继续播放；点击恢复按钮即可回到朗读位置。也可以右键从某段开始、双击从某句开始，或通过进度条跳转。多句预取和音频预加载用于减少短句与长句交替时的等待，适合边听边看、检查自己写的小说或阅读长文。
+
+应用使用用户配置的云端 TTS API，不捆绑本地大模型。项目以 MIT 许可证开放源码，支持 Windows 本机构建；当前版本的接口能力、验证范围和限制见下文。
+
 ## 当前功能
 
 - 保留 MarkText 的 Markdown 编辑、文件打开、保存、目录与主题能力。
